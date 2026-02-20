@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUSHI ❤️ DIVYA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="welcome-overlay">
+      <div class="welcome-content">
+        <h1 id="typingText" class="fade-text">RUSHI ❤️ DIVYA</h1>
+        <p id="subText" class="fade-text-sub">
+          Yeh website sirf hum dono ke liye hai… hamari kahani ke liye.
+        </p>
+        <button class="btn-open" onclick="enterWebsite()">
+          Hamari Kahani Dekho
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-fixed"></div>
+    <div class="star-overlay"></div>
+
+    <main id="mainContent" class="hidden-content">
+      <!-- HERO SECTION -->
+      <section class="hero active">
+        <div class="hero-content">
+          <h1>RUSHI ❤️ DIVYA</h1>
+          <p class="subtitle">
+            17 February 2026, shaam 4:01 se meri duniya badal gayi… us din se
+            har pal sirf hamara hai.
+          </p>
+
+          <div class="timer-wrapper">
+            <div class="time-segment">
+              <span id="days">00</span>
+              <span class="label">Hari</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-segment">
+              <span id="hours">00</span>
+              <span class="label">Jam</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-segment">
+              <span id="minutes">00</span>
+              <span class="label">Menit</span>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-segment">
+              <span id="seconds">00</span>
+              <span class="label">Detik</span>
+            </div>
+          </div>
+
+          <button
+            onclick="scrollToSection('playlist')"
+            class="scroll-indicator"
+          >
+            <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- TIMELINE SECTION -->
+      <section id="stories" class="section">
+        <div class="section-header reveal">
+          <h2> RUSHI ❤️ DIVYA</h2>
+          <p>
+            College se shuru hui ek simple si kahani, jo aaj meri zindagi ki
+            sabse khoobsurat sachchai ban chuki hai.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-box left reveal">
+            <div class="date-badge">College</div>
+            <div class="box-content">
+              <h3><i class="fas fa-graduation-cap"></i> Pehli Baar</h3>
+              <p>
+                College mein jab pehli baar tumse baat hui, tab mujhe andaza bhi
+                nahi tha ki tum meri zindagi ka sabse important hissa ban jaogi.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-box right reveal">
+            <div class="date-badge">17 Feb 2026 • 4:01 PM</div>
+            <div class="box-content">
+              <h3><i class="fas fa-heart"></i> Hum Shuru Hue</h3>
+              <p>
+                Yeh sirf ek date nahi, yeh meri life ka turning point hai. Us
+                din se main aur tum dheere dheere "hum" ban gaye.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="section">
+  <div class="section-header reveal">
+    <h2>MEMORY FEELING</h2>
+  </div>
+
+  <div class="gallery-container">
+
+    <div class="polaroid rotate-right">
+      <video autoplay muted loop playsinline>
+        <source src="/WhatsApp Video 2026-02-20 at 4.03.20 PM.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Masti wale moments 😄</div>
+    </div>
+
+    <div class="polaroid rotate-left">
+      <img src="/generated-image-1.png" />
+      <div class="caption">Tum ho toh sab perfect hai 💖</div>
+    </div>
+
+    <div class="polaroid rotate-right">
+      <img src="/image.png" />
+      <div class="caption">Forever together 💍</div>
+    </div>
+
+  </div>
+</section>
+
+          <div class="glow-box">
+            <i
+              class="fas fa-heart heart-beat"
+              id="loveIcon"
+              onclick="createHeartShower()"
+            ></i>
+
+            <p>
+              DIVYA, tum meri princess ho 👑 Chahe tum mujhe apna mano ya na
+              mano, mere dil mein tumhare liye jo pyaar hai woh kabhi khatam
+              nahi hoga. Mujhe tumhare saath time spend karna, ghumna, hasna,
+              masti karna aur tumhari care karna sabse zyada pasand hai. Main
+              promise karta hoon meri wajah se kabhi tumhe dukh ya problem feel
+              nahi hone dunga. Main hamesha tumhe khush aur special mehsoos
+              karane ki koshish karunga. Shayad maine kabhi kabhi tumhe pareshan
+              kiya ho, par mera dil hamesha sirf tumhare liye dhadakta hai. Agar
+              kabhi bhi tumhare dil mein mere liye feeling aaye, toh bas itna
+              samajhna — RUSHI hamesha tumhara hi rahega. I love you so much ❤️
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="music-floater" id="playerBar">
+        <div class="floater-info">
+          <div class="equalizer"><span></span><span></span><span></span></div>
+          <span id="currentSongTitle" class="song-title">Pilih lagu...</span>
+        </div>
+        <button
+          onclick="toggleMusic()"
+          class="btn-control"
+          aria-label="Play Music"
+        >
+          <i class="fas fa-play" id="mainPlayIcon"></i>
+        </button>
+      </div>
+      <audio id="myAudio" loop>
+        <source
+          src="myAudio/lagu-kotainitaksamatanpamu.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <footer>
+        <p>RUSHI ❤️ DIVYA </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
